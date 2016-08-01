@@ -1,0 +1,6 @@
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Virtual\Virtual\bin\Debug\Virtual.exe.config
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Virtual\Virtual\bin\Debug\Virtual.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Virtual\Virtual\bin\Debug\Virtual.pdb
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Virtual\Virtual\obj\Debug\Virtual.csprojResolveAssemblyReference.cache
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Virtual\Virtual\obj\Debug\Virtual.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Virtual\Virtual\obj\Debug\Virtual.pdb
