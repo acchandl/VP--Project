@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Virtual
+namespace VP
 {
     class VirtualPet
     {
@@ -14,10 +14,9 @@ namespace Virtual
         private int happy;
         private int play;
         private int exercise;
-
+        const string star = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
 
         //properties
-
         public int Hunger
         {
             get { return this.feed; }
@@ -48,41 +47,40 @@ namespace Virtual
 
         public VirtualPet()
         {
-            this.feed = 50;
-            this.happy = 50;
-            this.play = 50;
-            this.exercise = 50;
+            feed = 50;
+            happy = 50;
+            play = 50;
+            exercise = 50;
         }
 
-
-        public void Eat()
+        public void Eating(bool feedr)
         {
-            feed = feed + 10;
+            if (feedr)
+            {
+                feed = feed + 10;
+            }
+            else
+                feed = feed - 15;
         }
 
-        public void Eatr()
+        public void Playfulness(int playr)
         {
-            feed = feed - 15;
+            if (playr == 1 || playr == 3)
+            {
+                play = play + 10;
+            }
+            else
+                play = play - 20;
         }
 
-        public void Playfulness()
+        public void Work(int exerciser)
         {
-            play = play + 10;
-        }
-
-        public void Playfulnessr()
-        {
-            play = play - 14;
-        }
-
-        public void Work()
-        {
-            exercise = exercise + 10;
-        }
-
-        public void Workr()
-        {
-            exercise = exercise - 12;
+            if (exerciser == 1 || exerciser == 3)
+            {
+                exercise = exercise + 20;
+            }
+            else
+                exercise = exercise - 10;
         }
 
         public void Tick()
@@ -111,7 +109,7 @@ namespace Virtual
         }
 
 
-        public void Queen()
+        public void Opening()
         {
             Console.WriteLine("hello friend! my name is fluffy bunny! to keep me happy, healthy, and sane you \nmust feed me the right food, play with me, and take me for walks! ");
             Console.WriteLine();
@@ -120,8 +118,33 @@ namespace Virtual
             Console.WriteLine(" ( . .)");
             Console.WriteLine();
             Console.WriteLine("C('')('')");
+        }
+
+
+
+
+        public void DisplayResponse(string stats, bool changeAttitude)
+        {
+            //never going to change = use constant--usually for strings
+            Console.WriteLine(star);
+            Console.WriteLine();
+            if (changeAttitude)
+            {
+                Console.WriteLine("My " + stats + "Increased");
+            }
+            else
+            {
+                Console.WriteLine("My " + stats + "Decreased");
+            }
+            Console.WriteLine();
+            Console.WriteLine(star);
 
         }
 
-        }
+
+
+    }
+
+
 }
+
