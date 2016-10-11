@@ -1,4 +1,4 @@
-# VP--Project
+# Virtual Pet
 
 
 This Virtual Pet is named Fluffy Bunny. Fluffy Bunny needs to be fed, exercised, and played with each day.
